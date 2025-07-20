@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .button-container a {
+      background: rgba(255, 255, 255, 0.9);
+      color: #000;
+      padding: 20px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: background 0.3s ease;
+    }
+
+    .button-container a:hover {
+      background: #007bff;
+      color: white;
+    }
+
+    .logout-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: crimson;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    }
+
+    .logout-btn:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="logout-btn" onclick="window.location.href='index.html'">Logout</button>
+
+  <div class="button-container">
+    <a href="customer-care.html">Customer Care</a>
+    <a href="final-inspection.html">Final Inspection</a>
+    <a href="finishing.html">Finishing</a>
+  </div>
+
+</body>
+</html>
